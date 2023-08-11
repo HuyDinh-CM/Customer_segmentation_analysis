@@ -1,4 +1,9 @@
-# Customer_segmentation_analysis
+# Customer segmentation analysis
+
+<div align="center">
+  <img src="https://www.netscribes.com/wp-content/uploads/2022/03/Customer-segmentation-strategy.jpg" alt="Customer segmentation analysis">
+</div>
+
 ## The goal of the project
 The project objective is to analyze and segment the automobile bike company customers in Australia. Using Python for data cleaning and Tableau for visualization, we apply the RFM model to optimize marketing strategy and improve customer experience.
 ## Dataset
