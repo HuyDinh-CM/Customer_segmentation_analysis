@@ -5,20 +5,28 @@
 </div>
 
 ## The goal of the project
-The project objective is to analyze and segment the automobile bike company customers in Australia. Using Python for data cleaning and Tableau for visualization, we apply the RFM model to optimize marketing strategy and improve customer experience.
+This project focuses on performing customer segmentation based on a dataset named "Raw_data.xlsx." This data set includes information related to transactions, customer information, customer addresses, and new customer lists.
+
+The project's primary goal is to build RFM (Recency, Frequency, Monetary) model to segment customers based on their shopping behaviour, thereby better understanding how customers interact with the company and creating similar customer groups.
+
 ## Dataset
-My dataset consists of Excel sheets containing information about a bicycle company operating in the Australian market. Here is the description of the sheets in the dataset:
-### Transaction: 
-This is a record sheet containing information about customer purchases. Columns can include information about transaction ID, transaction date, customer ID, purchased product/service, quantity, price, and other transaction details.
-### New Customer: 
-They are used to store information about the company's new customers. It contains the customer ID, name, email address, phone number, and joining date.
-### Customer Demographic: 
-Contains information about customer characteristics like gender, date of birth, and occupation. This helps to segment customers by groups of similar nature.
-### Address: 
-Contains information about the customer's address, including street, city, county, zip code, and other address details.
-The data in the dataset is fundamental in understanding customer buying behavior and creating customer segments to apply the RFM model. Based on the information in the sheets, you can analyze each customer's shopping pattern, purchase frequency, and monetary value to make appropriate strategies and business development directions.
+My dataset consists of Excel sheets containing information about an automobile bike company operating in the Australian market. The data in the file "Raw_data.xlsx" is divided into the following sheets:
+- *Transactions:* Contains information about purchase transactions.
+- *CustomerDemographic:* Contains information about the customer.
+- *CustomerAddress:* Contains information about the customer's address.
+- *NewCustomerList:* Contains information about the new customer list.
+
+## Tools and Libraries
+The project is implemented using Google Colab, a browser-based development environment, and uses Python libraries such as:
+- *Pandas:* Processing and analyzing data.
+- *Numpy:* Arithmetic and statistical operations.
+- *Matplotlib and Seaborn:* Plotting and visualizing data.
+- *Math:* Essential math calculations.
 
 ## Analysis Approach
-During the Analysis Approach phase, using Python and Google Colab, I explored and cleaned the data in the dataset. I exported the correct data set by examining and processing missing, null, duplicates, and data inconsistency values. I prepared it for the following Customer Segmentation Analysis project analysis steps.
-### customer_demographic:
-When the Date of Birth is Null, tenure is also Null. Therefore, null terms are also removed after removing null DOBs from the data frame.
+- During the Analysis Approach phase, using Python and Google Colab, I explored and cleaned the data in the dataset. I exported the correct data set by examining and processing missing, null, duplicates, and data inconsistency values. I prepared it for the following Customer Segmentation Analysis project analysis steps.
+- Check and clean data from Transactions, CustomerDemographic, and CustomerAddress sheets, and then organize relevant information to perform RFM analysis.
+- Data processing for the NewCustomerList sheet is similar to the previous steps.
+- Create a .ipynb file named "RFM_model_analysis.ipynb" to perform customer segmentation and compare their characteristics with the new list of customers from the NewCustomerList sheet.
+- The project has successfully implemented customer segmentation using the RFM model. Customer groups were created based on their shopping behaviour.
+- The comparison with the new customer list from the NewCustomerList sheet helps better understand the nature of the customer groups and how they might interact with the company.
